@@ -16,9 +16,27 @@ android {
 
 //        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        sourceCompatibility=JavaVersion.VERSION_1_8
+        targetCompatibility=JavaVersion.VERSION_1_8
+    }
+    flavorDimensions("version")
+    productFlavors{
+        create("user"){
+            setDimension("version")
+           applicationId = "com.pankaj.user"
+           resValue("string","app_name","eMarket")
 
+        }
+        create("partner"){
+            setDimension("version")
+            applicationId ="com.pankaj.partner"
+            resValue("string","app_name","eMarket Partner")
+        }
+
+    }
 }
 
 dependencies {
-    implementation(project(":app"))
+    api(project(":app"))
 }

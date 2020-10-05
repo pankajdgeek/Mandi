@@ -8,6 +8,12 @@ object App{
     const val versionName ="1.0"
 }
 
+object AppFeatures{
+//    val prod =
+    val user= mutableSetOf(":User")
+    val partner= mutableSetOf(":transport")
+}
+
 object Versions {
     const val kotlin = "1.4.0"
     const val androidxCore = "1.3.1"
@@ -18,6 +24,8 @@ object Versions {
     const val constraint = "2.0.1"
     const val build ="4.0.1"
     const val kotlinGradle="1.4.0"
+    const val koin="2.1.6"
+
 }
 
 object Dependencies {

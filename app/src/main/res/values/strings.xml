@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Mandi</string>
+<!--    <string name="app_name">Mandi</string>-->
     <string name="title_transport">TransportFeature</string>
     <string name="title_base">Base</string>
     <string name="title_user">User</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>
